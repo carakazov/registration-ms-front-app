@@ -6,9 +6,7 @@ import { TRANSLATION_RU } from './ru/translation';
 import { TRANSLATION_EN } from './en/translation';
 
 i18n.use(initReactI18next)
-    .use(LanguageDetector)
     .init({
-        fallbackLng: 'ru',
         resources: {
             ru: {
                 translation: TRANSLATION_RU,
