@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    height: 40px;
+    background-color: #393939;
+    color: white;
+    font-family: Tahoma, serif;
+}
+
+.header-item {
+    flex: 1
+}
+
+.app-title {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+    column-gap: 15px;
+    padding-top: 10px;
+}
+
+.company-title {
+    font-size: 1.5rem;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+select {
+    height: 20px;
+    border-radius: 5px;
+    background-color: #393939;
+    color: white;
+}
+
+option {
+    font-family: Tahoma, serif;
+    background-color: #393939;
+    color: white;
+    border-radius: 5px;
+}

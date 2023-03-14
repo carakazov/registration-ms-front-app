@@ -1,3 +1,5 @@
 export const TRANSLATION_EN = {
-    //add english text here
+    titles: {
+        administrationConsole: 'Administration Console'
+    }
 }
