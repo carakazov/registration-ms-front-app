@@ -1,0 +1,24 @@
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: min(10%, 140px);
+    font-family: Tahoma, serif;
+}
+
+.login-form-wrapper {
+    background-color: white;
+    min-width: 600px;
+    min-height: 280px;
+    box-shadow: 0 0 5px #000000;
+}
+
+.footer-line-div {
+    margin-top: 150px;
+    font-size: 30px;
+}
+
+.login-form-header {
+    text-align: center;
+    padding-top: 20px;
+}
