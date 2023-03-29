@@ -4,7 +4,6 @@ import {useEffect, useState} from "react";
 import './header.css'
 import languageHolder from "../holders/languageHolder";
 
-
 export default function Header() {
     const {t, i18n} = useTranslation()
 
@@ -16,7 +15,7 @@ export default function Header() {
     }, [language])
 
     return(
-        <div className={'header'}>
+        <header className={'header'}>
             <div className={'header-item company-title'}>
                 Swan Security Systems
             </div>
@@ -27,6 +26,6 @@ export default function Header() {
                 </select>
                 {t('titles.administrationConsole')}
             </div>
-        </div>
+        </header>
     )
 }
