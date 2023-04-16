@@ -1,0 +1,22 @@
+.status-history-list-wrapper {
+    font-family: Tahoma, serif;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.status-history-block-header {
+    background-color: #F3755A;
+    height: 20px;
+    color: white;
+    text-align: center;
+}
+
+.status-history-list {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    height: 750px;
+    align-items: center;
+}

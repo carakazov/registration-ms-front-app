@@ -1,0 +1,25 @@
+.client-information-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    font-family: Tahoma, serif;
+}
+
+.client-information-header {
+    width: 400px;
+    background-color: #F3755A;
+    color: white;
+    text-align: center;
+    height: 20px;
+    padding-top: 1px;
+}
+
+.client-cards-wrapper {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    padding-top: 10px;
+    height: 750px;
+}

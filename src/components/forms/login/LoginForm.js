@@ -34,7 +34,7 @@ export default function LoginForm() {
     async function logIn(params) {
         await login(params)
             .then(result => {
-                setData(params.login, params.password, result.access_token)
+                setData(params.login, params.password, result.access_token, result.expires_in)
                 hasAuthed(true)
             })
             .catch(reject => {

@@ -1,0 +1,28 @@
+.card-wrapper {
+    background-color: #F3F3F3;
+    width: 350px;
+    font-family: Tahoma, serif;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 10px;
+}
+
+.under-line {
+    display: flex;
+}
+
+.under-line-item {
+    flex: 1;
+}
+
+.change-block {
+    text-align: right;
+    color: #F3755A;
+    text-decoration: underline;
+    text-underline: #F3755A;
+}
+
+.checked {
+    border: black solid 1px;
+}

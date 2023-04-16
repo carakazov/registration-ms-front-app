@@ -1,0 +1,13 @@
+.list-page-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.lists-wrapper {
+    margin-top: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1250px;
+    column-gap: 50px;
+}

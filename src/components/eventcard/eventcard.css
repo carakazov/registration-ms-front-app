@@ -1,0 +1,25 @@
+.event-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    font-family: Tahoma, serif;
+    row-gap: 15px;
+    padding: 10px;
+    background-color: #F3F3F3;
+}
+
+.under-line {
+    display: flex;
+}
+
+.under-line-item {
+    flex: 1;
+}
+
+.date-block {
+
+}
+
+.operator-block {
+    text-align: right;
+}
