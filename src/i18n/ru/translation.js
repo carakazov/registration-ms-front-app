@@ -30,7 +30,7 @@ export const TRANSLATION_RU = {
         event: 'Событие',
         date: 'Дата',
         operator: 'Оператор',
-        blocked: 'Разблокировано',
-        unblock: 'Разблокировано'
+        blocked: 'Заблокировано',
+        unblocked: 'Разблокировано'
     }
 }

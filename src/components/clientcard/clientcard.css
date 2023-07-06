@@ -21,8 +21,15 @@
     color: #F3755A;
     text-decoration: underline;
     text-underline: #F3755A;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .checked {
     border: black solid 1px;
+}
+
+.button-line {
+    cursor: pointer;
+    width: 80px;
 }

@@ -31,6 +31,6 @@ export const TRANSLATION_EN = {
         date: 'Date',
         operator: 'Operator',
         blocked: 'Blocked',
-        unblock: 'Unblocked'
+        unblocked: 'Unblocked'
     }
 }

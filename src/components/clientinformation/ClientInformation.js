@@ -28,10 +28,7 @@ export default function ClientInformation() {
     }, [])
 
     if(fetchError.isError) {
-        if(fetchError.errorCode === 401 || fetchError.errorCode === 403) {
-            navigate('/')
-        }
-        return(<h1>{t('errors.serverException')}</h1>)
+        navigate('/')
     }
 
     return(

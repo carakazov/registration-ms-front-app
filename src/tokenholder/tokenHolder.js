@@ -18,7 +18,3 @@ export async function getToken() {
 export function deleteToken() {
     sessionStorage.removeItem(TOKEN_KEY)
 }
-
-export function  isAuthed() {
-    return !(sessionStorage.getItem(TOKEN_KEY) === null)
-}

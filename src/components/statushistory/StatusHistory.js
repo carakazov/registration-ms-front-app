@@ -7,7 +7,6 @@ import {useNavigate} from "react-router";
 import './statushistory.css'
 
 export default function StatusHistory() {
-    const [historyList, setHistoryList] = useState([])
     const [fetchError, setFetchError] = useState({})
     const [listToRender, setListToRender] = useState([])
 
@@ -16,21 +15,24 @@ export default function StatusHistory() {
     const navigate = useNavigate()
 
     useEffect(() => {
-       if(shouldReload) {
-           getHistory()
-               .then(result => setHistoryList(result.history))
-               .catch(reject => setFetchError({
-                   isError: true,
-                   errorStatus: reject
-               }))
-           setShouldReload(false)
-       }
+        if(shouldReload) {
+            getHistory()
+                .then(result => {
+                    let list = result.history
+                    list.sort((o1, o2) => {
+                        if(o1.eventDate > o2.eventDate) return -1
+                        if(o1.eventDate === o2.eventDate) return 0
+                        if(o1.eventDate < o2.eventDate) return 1
+                    })
+                    setListToRender(list.filter(item => item.clientSystem === checkedSystem))
+                })
+                .catch(reject => setFetchError({
+                    isError: true,
+                    errorStatus: reject
+                }))
+            setShouldReload(false)
+        }
     }, [shouldReload])
-
-    useEffect(() => {
-        let list = historyList.filter(item => item.clientSystem === checkedSystem)
-        setListToRender(list)
-    }, [checkedSystem])
 
     if(fetchError.isError) {
         if(fetchError.errorCode === 401 || fetchError.errorCode === 403) {
